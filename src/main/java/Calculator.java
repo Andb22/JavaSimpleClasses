@@ -12,4 +12,12 @@ public class Calculator {
     public int addNumbers(){
         return (num1 + num2);
     }
+
+    public int subtractNumbers(){
+        return (num1 - num2);
+    }
+
+    public int multiplyNumbers(){
+        return (num1 * num2);
+    }
 }
