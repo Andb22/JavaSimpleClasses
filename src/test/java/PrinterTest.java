@@ -1,4 +1,3 @@
-import jdk.internal.org.objectweb.asm.util.Printer;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -15,6 +14,12 @@ public class PrinterTest {
 
     @Test
     public void numOfSheets() {
-        assertEquals(20, printer.sheetsLeft())
+        assertEquals(20, printer.sheetsLeft());
     }
+
+    @Test
+    public void canPrint() {
+        assertEquals("The printer does not have enough paper", printer.print(20,3));
+    }
+
 }

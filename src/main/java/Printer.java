@@ -12,7 +12,13 @@ public class Printer {
         return this.paperSheets;
     }
 
-    public int print(int pages, int copies) {
-
+    public String print(int pages, int copies) {
+        int printTotal = (pages * copies);
+        if (printTotal < this.paperSheets) {
+            this.paperSheets -= printTotal;
+            return ("Sheets printed :" + printTotal);
+        } else {
+            return "The printer does not have enough paper";
+        }
     }
 }
