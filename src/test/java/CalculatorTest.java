@@ -8,7 +8,9 @@ public class CalculatorTest {
     private Calculator calculator;
 
     @Before
-    public void before() {}
+    public void before() {
+        calculator = new Calculator(5, 5);
+    }
 
     @Test
     public void canAdd(){
